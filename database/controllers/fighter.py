@@ -66,4 +66,3 @@ class FighterController:
         except DBAPIError as e:
             await session.rollback()
             raise DatabaseError() from e
-
